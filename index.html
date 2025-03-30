@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Digital Portfolio - Madhan Kumar K</title>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Madhan Kumar K</h1>
+            <img src="qwe.jpg" alt="Profile Picture" class="picture-content">
+            <h4>BCA Student</h4>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <div class="section-content">
+            <h2>About Me</h2>
+            <p>BCA student with a passion for learning and developing new skills. Proficient in Python and C++, and enthusiastic about exploring the world of programming. Always eager to solve problems and find innovative solutions. I enjoy reading books and continuously learning something new.</p>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <p><strong>Bachelor of Computer Applications (BCA)</strong><br>S.A College of Arts and Science, Chennai (2023 - 2026)<br>Currently in 2nd Year</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Python</li>
+            <li>C++</li>
+            <li>Problem-Solving</li>
+        </ul>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <p>No formal experience, but actively working on projects and enhancing programming knowledge through practical learning.</p>
+    </section>
+
+    <section id="resume">
+        <center>
+            <div class="section-content">
+                <h2>Resume</h2>
+                <a href="https://drive.google.com/file/d/1xkpMtaPO6bduaEG0wEub9JpYRRsIjtF3/view?usp=drivesdk" download class="download-btn">Download Resume</a>
+            </div>
+        </center>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Mobile: 9344492567</p>
+        <p>Email: <a href="mailto:Kmadhankumar1433@email.com">Kmadhankumar1433@email.com</a></p>
+        <p>LinkedIn: <a href="#">Madhan Kumar</a></p>
+        <p>Location: Chennai</p>
+    </section>
+
+    <footer>
+        <center>
+            <p>&copy; 2025 Madhan Kumar K</p>
+        </center>
+    </footer>
+
+    <script>
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('nav a').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+    </script>
+</body>
+</html>
